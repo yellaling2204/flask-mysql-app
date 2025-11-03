@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HOST = 'unix:///var/run/docker.sock'
+        DOCKER_HOST = 'unix:///Users/aathreya/.docker/run/docker.sock'
         DOCKER_TLS_VERIFY = ''
         DOCKER_CERT_PATH = ''
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
