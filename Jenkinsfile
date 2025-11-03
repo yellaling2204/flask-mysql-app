@@ -6,7 +6,8 @@ pipeline {
         DOCKER_TLS_VERIFY = ''
         DOCKER_CERT_PATH = ''
         DOCKER_API_VERSION = '1.43'
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
+       credentialsId: 'dockerhub-creds'
+
     }
 
     stages {
